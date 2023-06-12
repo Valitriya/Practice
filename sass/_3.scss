@@ -41,9 +41,11 @@
     }
     &__right{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-template-columns: repeat(2, minmax(200px, auto));
         padding: 60px;
         grid-gap: 60px;
+        align-content: center;
+        padding: 200px 40px;
         .card{
             display: grid;
             justify-items: center;
@@ -74,8 +76,19 @@
                 letter-spacing: 2px;
                 text-transform: uppercase;
             }
+            &__descr{
+                font-size: 12px;
+                line-height: 1em;
+                letter-spacing: 2px;
+            }
         }
     }
 }
 
-
+@media (max-width: 1600px) {
+    .box{
+        &__right{
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        }
+    } 
+}
