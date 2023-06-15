@@ -27,5 +27,34 @@
                 background-color: #444;
         }
     }
+    &__left{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+        & > div:first-child{
+            justify-self: end;
+            text-align: right;
+            & .text {
+                border-right: 3px solid #777;
+                padding-right: 20px;
+                max-width: 200px;
+            }
+        }
+        .square{
+            --size: 20vw;
+            position: relative;
+            right: calc(var(--size) / -2);
+            width: var(--size);
+            height: var(--size);
+            background-color: #444;
+            transform: rotate(45deg);
+            margin-bottom: 10vw;
+        }
+        .text + .square{
+            top: 0;
+            margin-bottom: 0;
+        }
+    }
     
 }
