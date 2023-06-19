@@ -39,6 +39,14 @@
                 border-right: 3px solid #777;
                 padding-right: 20px;
                 max-width: 200px;
+                &:first-child{
+                    border-left: 3px solid #777;
+                    padding-left: 20px;
+                }
+                & + .square{
+                    top: 0;
+                    margin-bottom: 0;
+                }
             }
         }
         .square{
@@ -50,10 +58,6 @@
             background-color: #444;
             transform: rotate(45deg);
             margin-bottom: 10vw;
-        }
-        .text + .square{
-            top: 0;
-            margin-bottom: 0;
         }
     }
     
