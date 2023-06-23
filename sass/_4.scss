@@ -31,6 +31,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center; 
+        gap: 150px;
         & > div:first-child{
             justify-self: end;
             text-align: right;
@@ -48,6 +49,7 @@
                 border-left: 3px solid #777;
                 padding-left: 20px; 
                 max-width: 400px;
+                margin: 200px 0 200px;
             }
         }
         .square{
@@ -59,8 +61,14 @@
             background-color: #444;
             transform: rotate(45deg);
             margin-bottom: 19vw;
-            margin-top: 5vw;
+           
             top: 6vw;
+            &__bg{
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                transform: rotate(-45deg);
+            }
 }
             &::before{
                 content: '';
@@ -81,6 +89,4 @@
                 }
             }
         }
-    }
-    
 }
