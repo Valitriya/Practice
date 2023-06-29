@@ -1,0 +1,12 @@
+.body{
+    display: grid;
+    justify-content: center;
+    &.content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        &__item{
+            grid-row: 2;
+            
+        }
+    }
+}
