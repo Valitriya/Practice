@@ -1,24 +1,25 @@
 .body{
     display: grid;
     justify-content: center;
-    &.content{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        &__item{
-            display: grid;
-            grid-row: 2;
-            justify-items: center;
-            &-circle{
-                --size: 20vw;
-                width: var(--size);
-                height: var(--size);
-                border-radius: var(--size);
-                background-color: #333;
-            }         
-        }
-        &__title{
-            grid-column: 1 / 3;
-            font-size: 64px;
-        }
-    }
 } 
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &__item{
+        display: grid;
+        grid-row: 2;
+        justify-items: center;
+        grid-gap: 50px;
+        &-circle{
+            --size: 20vw;
+            width: var(--size);
+            height: var(--size);
+            border-radius: var(--size);
+            background-color: #333;
+        }         
+    }
+    &__title{
+        grid-column: 1 / 3;
+        font-size: 64px;
+    }
+}
